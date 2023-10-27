@@ -1,0 +1,142 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* 
+font-family: 'Lato', sans-serif;
+ */
+
+body {
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+li {
+  list-style: none;
+  display: inline;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+button {
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,
+.main {
+  color: white;
+  background-color: #64656a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+}
+
+header > button {
+  background-color: white;
+  color: #64656a;
+  border-radius: 15px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  margin-right: 25px;
+}
+
+.main,
+.why,
+.volunteer,
+.meet-with-us {
+  margin: 0 auto;
+  padding: 60px 200px;
+}
+
+.main > p {
+  font-size: 1rem;
+}
+
+.main > h1 {
+  font-size: 3.5rem;
+}
+
+.text-box {
+  width: 40%;
+}
+
+.meet-with-us > section {
+  display: inline-block;
+  padding: 15px;
+}
+
+.meet-with-us {
+  background-color: #8f96ab;
+}
+
+footer {
+  display: flex;
+  background-color: #253c7d;
+  text-align: left;
+  padding: 10px 20px;
+  height: auto;
+  font-size: 0.75rem;
+  justify-content: space-between;
+}
+
+.exemption {
+  background-color: #253c7d;
+  text-align: left;
+  padding: 10px 20px;
+  height: auto;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  clear: both;
+}
+
+footer > section > p {
+  display: inline-block;
+}
+
+.contact,
+.footer-links {
+  width: 15%;
+}
+
+.contact {
+  display: grid;
+}
+.social-media > i {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
