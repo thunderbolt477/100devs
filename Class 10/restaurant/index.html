@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/0491965ebe.js"
       crossorigin="anonymous"
@@ -36,13 +43,13 @@
       </form>
       <ul>
         <li>
-          <a href=""><i class="fa-brands fa-facebook-f"></i> 252k</a>
+          <a href=""><i class="fa-brands fa-facebook-f icon"></i> 252k</a>
         </li>
         <li>
-          <a href=""><i class="fa-brands fa-twitter"></i> 62k</a>
+          <a href=""><i class="fa-brands fa-twitter icon"></i> 62k</a>
         </li>
         <li>
-          <a href=""><i class="fa-brands fa-instagram"></i> 55k</a>
+          <a href=""><i class="fa-brands fa-instagram icon"></i> 55k</a>
         </li>
       </ul>
     </section>
@@ -75,57 +82,31 @@
         <li>Shake</li>
       </ul>
       <div class="carousel">
-        <div class="breakfast">
-          <img src="item1_image1.jpg" alt="Item 1 - Image 1" />
-          <img src="item1_image2.jpg" alt="Item 1 - Image 2" />
-          <img src="item1_image3.jpg" alt="Item 1 - Image 3" />
-          <img src="item1_image4.jpg" alt="Item 1 - Image 4" />
-        </div>
-        <div class="lunch">
-          <img src="item1_image1.jpg" alt="Item 1 - Image 1" />
-          <img src="item1_image2.jpg" alt="Item 1 - Image 2" />
-          <img src="item1_image3.jpg" alt="Item 1 - Image 3" />
-          <img src="item1_image4.jpg" alt="Item 1 - Image 4" />
-        </div>
-        <div class="dinner">
-          <img src="item1_image1.jpg" alt="Item 1 - Image 1" />
-          <img src="item1_image2.jpg" alt="Item 1 - Image 2" />
-          <img src="item1_image3.jpg" alt="Item 1 - Image 3" />
-          <img src="item1_image4.jpg" alt="Item 1 - Image 4" />
-        </div>
-        <div class="dessert">
-          <img src="item1_image1.jpg" alt="Item 1 - Image 1" />
-          <img src="item1_image2.jpg" alt="Item 1 - Image 2" />
-          <img src="item1_image3.jpg" alt="Item 1 - Image 3" />
-          <img src="item1_image4.jpg" alt="Item 1 - Image 4" />
-        </div>
-        <div class="shake">
-          <img src="item1_image1.jpg" alt="Item 1 - Image 1" />
-          <img src="item1_image2.jpg" alt="Item 1 - Image 2" />
-          <img src="item1_image3.jpg" alt="Item 1 - Image 3" />
-          <img src="item1_image4.jpg" alt="Item 1 - Image 4" />
-        </div>
+        <img src="img/Screenshot 2023-10-27 at 4.19.16 PM.png" alt="">
       </div>
     </section>
     <section class="hours">
       <h6>Book Table</h6>
       <h2>Opening Hours</h2>
       <div>
-        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-phone icon"></i>
         <p>Call Now</p>
-        <h4>+1234567890</h4>
+        <h4 class="phone-number">+1234567890</h4>
       </div>
-      <div>
-        <p>Monday to Tuesday</p>
-        <h5>09:00 am - 22:00 pm</h5>
-      </div>
-      <div>
-        <p>Friday to Sunday</p>
-        <h5>11:00 am - 20:00 pm</h5>
-      </div>
+      <section class="hours-days">
+        <div class="">
+          <p>Monday to Tuesday</p>
+          <h5>09:00 am - 22:00 pm</h5>
+        </div>
+        <div class="">
+          <p>Friday to Sunday</p>
+          <h5>11:00 am - 20:00 pm</h5>
+        </div>
+      </section>
+
       <div class="carousel">
-        <div>
-          <h3>VIDEO HERE</h3>
+        <div class="video">
+          <img src="img/Screenshot 2023-10-27 at 4.25.02 PM.png" alt="">
         </div>
       </div>
     </section>
@@ -135,12 +116,12 @@
       <div class="carousel">
         <section>
           <div>
-            <img src="" alt="person" />
+            <img src="img/Screenshot 2023-10-27 at 4.19.02 PM.png" alt="person" />
             <p>Mr John Smith</p>
             <p>Art Directior</p>
-            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
           </div>
-          <p>
+          <p class="testimonial-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum placeat
             ipsum adipisci minima accusamus voluptas, excepturi animi nemo
             tempore distinctio consequuntur incidunt similique. Dolore

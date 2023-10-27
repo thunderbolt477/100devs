@@ -23,7 +23,25 @@
 
 body {
 
+
+font-family: 'Roboto', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+
+
 
 
 /******************************************
@@ -32,6 +50,76 @@ body {
 header {
 
 }
+
+nav {
+  margin: 15px;
+    text-align: right;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  }
+
+.main {
+  width: 40%;
+  margin-left: 10%;
+  padding-top: 5%;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: orange;
+}
+
+h6, .icon, .phone-number, .stars {
+  color: orange;
+}
+
+.about-us {
+  width: 30%;
+  text-align: left;
+  margin-left: 50%;
+}
+
+.hours {
+  text-align: center;
+}
+
+.hours-days {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15%;
+}
+
+.testimonials {
+margin-top: 5%;
+text-align: center;
+
+}
+
+.testimonial-text {
+  padding: 1% 15%;
+}
+.order-online, .about-us, .main, .testimonials, .hours {
+
+  padding-top: 3%;
+}
+
+.order-online {
+  text-align: center;
+}
+
+.phone-number {
+  font-size: 2rem;
+}
+
+.video{
+  width:auto;
+  margin: 0 auto;
+}
+
 
 footer {
 
