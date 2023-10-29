@@ -3,38 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Khan Academy</title>
   </head>
   <body>
     <header>
       <nav>
-        <div>
-          <button>Courses</button>
+        <section class="navigation">
+          <p><a href="">Courses</a></p>
+          <input type="text" placeholder="Search" />
+        </section>
+
+        <img src="img/Screenshot 2023-10-29 000434.jpg" alt="" />
+        <section class="nav-links">
           <ul>
-            <li><a href="">Course 1</a></li>
-            <li><a href="">Course 2</a></li>
-            <li><a href="">Course 3</a></li>
+            <li><a href="">Donate</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign up</a></li>
           </ul>
-        </div>
-        <input type="text" placeholder="Search" />
-        <div>Khan Academy Image</div>
-        <ul>
-          <li>Donate</li>
-          <li>Login</li>
-          <li>Sign up</li>
-        </ul>
+        </section>
       </nav>
     </header>
-    <section>
-      <div>IMG HERE</div>
-      <section>
-        <h1>For every student, every classroom. Real results</h1>
+    <section class="main">
+      <section class="main-img">
+        <img src="img/Screenshot 2023-10-29 000406.jpg" alt="" />
+      </section>
+
+      <section class="hero">
+        <h1>For every student, every classroom. <br />Real results</h1>
         <p>
           We're a nonprofit with the mission to provide a free, world-class
           education for anyone, anywhere.
         </p>
 
-        <ul>
+        <ul class="hero-btn">
           <li>Learners</li>
           <li>Teachers</li>
           <li>Districts</li>
@@ -42,8 +53,6 @@
         </ul>
       </section>
     </section>
-    <footer>
-      <h2>Why Khan Acadmey Works</h2>
-    </footer>
+    <footer></footer>
   </body>
 </html>

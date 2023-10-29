@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,19 +22,61 @@
 /*******************************************/
 
 body {
-
+  font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
 }
 
-footer {
+nav {
+  display: flex;
+  justify-content: space-around;
+}
 
+.navigation > p,
+.navigation > input {
+  display: inline;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main > img {
+  max-width: 40%;
+}
+
+.hero {
+  margin: auto 0;
+  width: 40%;
+}
+
+.hero > h1 {
+  font-size: 4rem;
+}
+
+.hero-btn {
+  margin-top: 10%;
+}
+.hero-btn > li {
+  color: white;
+  background-color: blue;
+  padding: 10px 25px;
+}
+footer {
 }
 
 /******************************************
