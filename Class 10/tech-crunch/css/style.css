@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,7 +22,7 @@
 /*******************************************/
 
 body {
-
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -34,43 +34,60 @@ li {
   margin-top: 10%;
   margin-right: 5%;
   font-size: 1.5rem;
-
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
- float: left;
- min-height: 100%;
-
+  float: left;
+  min-height: 100%;
 }
 
-
 header > h3 {
-padding: 15px;
+  padding: 15px;
 }
 
 ul {
   padding-left: 0px;
 }
 .hero {
-
   width: 70%;
+  float: left;
 }
-.hero-img{
-  max-width: 60%;
-  max-height: 60%;;
+.hero-img {
+  max-width: 70%;
 }
 
 .articles {
-  float: right;
+  float: left;
+  width: 20%;
+  height: 30%;
+}
+
+.latest-news {
+  clear: both;
+  margin-left: 9.5%;
+  margin-top: 15%;
+}
+
+.article-info,
+.article-text,
+.article-img {
+  margin: 3% 3% 0 0;
+  float: left;
   width: 30%;
 }
 
-footer {
+section > h3 {
+  font-size: 2rem;
+}
 
+h4 {
+  font-size: 2rem;
+}
+
+footer {
 }
 
 /******************************************
