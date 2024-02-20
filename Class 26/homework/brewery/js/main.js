@@ -1,26 +1,43 @@
-//Example fetch using pokemonapi.co
-// document.querySelector("button").addEventListener("click", getFetch);
+document.querySelector("button").addEventListener("click", function () {
+  const city = document.getElementById("city").value; // Get the value of the city input
+  getFetch(city); // Pass the city value to the getFetch function
+});
 
-// function getFetch(){
-//   const choice = document.querySelector('input').value
-//   const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
+function getFetch(city) {
+  let formatedCity = city.toLowerCase().replace(" ", "&20");
+  let url = `https://api.openbrewerydb.org/v1/breweries?by_city=${formatedCity}&per_page=3`;
 
-//   fetch(url)
-//       .then(res => res.json()) // parse response as JSON
-//       .then(data => {
-//         console.log(data)
-//       })
-//       .catch(err => {
-//           console.log(`error ${err}`)
-//       });
-// }
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      displayBreweries(data);
+    })
+    .catch((err) => {
+      console.log(`error: ${err}`);
+    });
+}
 
-fetch("https://api.openbrewerydb.org/v1/breweries")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    document.querySelector("h2").innerText = data[0].name;
-  })
-  .catch((err) => {
-    console.log(`error: ${err}`);
+function displayBreweries(breweries) {
+  const breweryList = document.getElementById("breweryList");
+  breweryList.innerHTML = "";
+
+  breweryList.forEach((brewery) => {
+    const breweryElement = document.createElement("div");
+    breweryElement.classList.add("brewery");
+
+    const name = document.createElement("h2");
+    name.textContent = brewery.name;
+
+    const type = document.createElement("p");
+    type.textContent = `Type: ${brewery.type}`;
+
+    const city = document.createElement("p");
+    city.textContent = `City: ${brewery.city}`;
+
+    breweryElement.appendChild(name);
+    breweryElement.appendChild(type);
+    breweryElement.appendChild(city);
+
+    breweryList.appendChild(breweryElement);
   });
+}
