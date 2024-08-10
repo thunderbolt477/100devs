@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="This is where your description goes" />
-    <meta name="keywords" content="one, two, three" />
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Find breweries in your favorite city">
+  <meta name="keywords" content="beer, breweries, city, search">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beer Me, Bro</title>
 
-    <title>Title in the tab</title>
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Beer Me, Bro</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Which City</h2>
+      <form id="cityForm">
+        <label for="city">Enter a city:</label>
+        <input id="city" type="text" name="city" placeholder="e.g., Portland">
+        <button type="submit">Beer Me</button>
+      </form>
+    </section>
 
-    <!-- external CSS link -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Beer Me, Bro</h1>
-    </header>
-    <h1>Which City</h1>
-    <div>
-      <input id="city" type="text" name="" value="" />
-      <button type="button" name="button">Beer Me</button>
-    </div>
+    <section id="breweryList"></section>
+  </main>
 
-    <div class="" id="breweryList"></div>
-
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
 </html>
